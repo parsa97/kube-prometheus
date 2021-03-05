@@ -12,6 +12,24 @@ data:
                 },
                 "orgId": 1,
                 "type": "file"
+            },
+            {
+                "folder": "Strimzi",
+                "name": "1",
+                "options": {
+                    "path": "/grafana-dashboard-strimzi/0"
+                },
+                "orgId": 1,
+                "type": "file"
+            },
+            {
+                "folder": "Time Convertor",
+                "name": "2",
+                "options": {
+                    "path": "/grafana-dashboard-tconvert/0"
+                },
+                "orgId": 1,
+                "type": "file"
             }
         ]
     }

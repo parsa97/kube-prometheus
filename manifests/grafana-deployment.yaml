@@ -122,6 +122,21 @@ spec:
         - mountPath: /grafana-dashboard-definitions/0/workload-total
           name: grafana-dashboard-workload-total
           readOnly: false
+        - mountPath: /grafana-dashboard-strimzi/0/strimzi-kafka
+          name: grafana-dashboard-strimzi-kafka
+          readOnly: false
+        - mountPath: /grafana-dashboard-strimzi/0/strimzi-operators
+          name: grafana-dashboard-strimzi-operators
+          readOnly: false
+        - mountPath: /grafana-dashboard-strimzi/0/strimzi-zookeeper
+          name: grafana-dashboard-strimzi-zookeeper
+          readOnly: false
+        - mountPath: /grafana-dashboard-strimzi/0/strimzi-kafka-exporter
+          name: grafana-dashboard-strimzi-kafka-exporter
+          readOnly: false
+        - mountPath: /grafana-dashboard-tconvert/0/tconvertor
+          name: grafana-dashboard-tconvertor
+          readOnly: false
       nodeSelector:
         beta.kubernetes.io/os: linux
       securityContext:
@@ -207,3 +222,18 @@ spec:
       - configMap:
           name: grafana-dashboard-workload-total
         name: grafana-dashboard-workload-total
+      - configMap:
+          name: grafana-dashboard-strimzi-kafka
+        name: grafana-dashboard-strimzi-kafka
+      - configMap:
+          name: grafana-dashboard-strimzi-operators
+        name: grafana-dashboard-strimzi-operators
+      - configMap:
+          name: grafana-dashboard-strimzi-zookeeper
+        name: grafana-dashboard-strimzi-zookeeper
+      - configMap:
+          name: grafana-dashboard-strimzi-kafka-exporter
+        name: grafana-dashboard-strimzi-kafka-exporter
+      - configMap:
+          name: grafana-dashboard-tconvertor
+        name: grafana-dashboard-tconvertor       
