@@ -182,7 +182,7 @@ data:
           "steppedLine": false,
           "targets": [
             {
-              "expr": "sum(rate(produced_message_total{container=\"epoch-convertor\"}[1m])) by (partition)",
+              "expr": "sum(rate(produced_message_total{container=\"epoch-converter\"}[1m])) by (partition)",
               "instant": false,
               "interval": "",
               "legendFormat": "{{ partition }}",
